@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+//	DOM과 이벤트 연결 연습
+function displayDate(){
+	// id가 demo인 p를 찾아서 현재 시간을 출력
+	var obj = document.getElementById("demo");
+	console.log("demo", obj);
+	obj.innerText = new Date();
+}
+
+function clearDate(){
+	var obj = document.getElementById("demo");
+	obj.innerText = "";
+}
+
+</script>
+
+</head>
+
+<body> 
+	<p>버튼을 클릭하면  <em>displayDate()</em> 함수가 실행 됩니다.</p>
+	<button id="myBtn"
+		onclick="displayDate()"
+		onmouseover="displayDate()"
+		onmouseout="clearDate()">Try it
+	</button>
+	<p id="demo"></p>
+
+
+</body>
+</html>

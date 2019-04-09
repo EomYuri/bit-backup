@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function myFunction() {
+   var x = document.getElementById( "fname" );
+   x.value=x.value.toUpperCase();
+}
+
+function selectChanged(){
+	// alert("!");
+	var message = Obj
+		.options[obj.selectedIndex]
+		.text;
+	alert(message);
+}
+
+</script>
+</head>
+<body>
+<select onchange="selectChanged(this)">
+	<option>value1</option>
+	<option>value2</option>
+	<option>value3</option>
+	<option>value4</option>
+	<option>value5</option>
+</select>
+<br>
+아이디 입력: 
+	<input type="text" 
+		id="fname" 
+		onchange="myFunction()">
+
+<p>
+	INPUT에 포커스가 없어지면, 이전 값이 변했는 지 판단해서 항상 대문자로 만드는 예제입니다.
+</p>
+
+</body>
+</html>

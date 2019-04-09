@@ -1,0 +1,39 @@
+package hdfs;
+
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+
+
+public class FileTest {
+	public static void main(String[] args) {
+		try {
+			Configuration config = new Configuration();
+			
+			java.nio.file.FileSystem hdfs = FileSystem.get(config);
+			
+			Path path = new Path(args[0]);
+			// 경로가 존재하면 삭제하고 이이서 수행
+			if(hdfs.exists(path)) {
+				hdfs.delete(path, true);
+			}
+			
+			FSDataOutputStream dos = hdfs.create(path);
+			dos.writeUTF(args[1]);
+			dos.close();
+			
+			FSDataInputStream ios = hdfs.Open(path);
+			String data = ios.readUTF();
+			ios.close();
+			
+			// CentOs Console Print...
+			System.out.println("Data Result: " + data);
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+
+}

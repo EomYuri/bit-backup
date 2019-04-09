@@ -1,0 +1,9 @@
+package com.bit.io;
+
+public class Program {
+	public static void main(String[] args) {
+		UserDao dao = new UserDao();
+		dao.process();
+	}
+
+}

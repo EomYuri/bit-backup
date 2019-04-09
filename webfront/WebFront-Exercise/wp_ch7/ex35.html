@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+* 		{ margin: 0; padding: 0}
+body	{
+	font-family: "맑은 고딕";
+	font-size: 0.75em;
+	color: #333;
+}
+h1		{ width:150px; margin:10px auto }
+ul		{ 
+	width:150px; margin:20px auto 0 auto; 
+	list-style-type:none; border-top:1px solid #bbb }
+li		{ 
+	width:130; 
+	padding:10px; 
+	border-width:0 1px 1px 1px; 
+	border-style: solid; 
+	background-color:#fff; 
+	border-color: #bbb; 
+	font-weight:bold; 
+	cursor:pointer 
+}
+li.on	{ background-color:#287FC2; color:#fff }		
+
+</style>
+<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
+<script type="text/javascript">
+	$( function() {
+			
+		/* 코드를 완성하세요 */
+		// VJS
+		// var objs = document.getElementsByTagName("li");
+		// for (var i = 0; i < objs.length; i++){
+		// 	var obj = objs[i];
+		// 	// 이벤트 리스너를 부착
+		// 	obj.addEventListener("mouseover", function(){
+		// 		// 해당 객체의 클래스에 on 클래스 추가
+		// 		console.log(this.classList);
+		// 		this.classList.add("on");
+		// 	});
+		// 	obj.addEventListener("mouseout", function(){
+		// 		// 객체 클래스로부터 on 클래스 제거
+		// 		this.classList.remove("on");
+		// 	});
+		// }
+
+		// jQuery
+		$("li").on("mouseover", function(){
+			// this -> 해당 엘리먼트 (HTML, Not jQuery 객체)
+			$(this).addClass("on");
+		});
+		$("li").on("mouseout", function(){
+			$(this).removeClass("on");
+		})
+		
+	} );  
+</script>
+</head>
+<body>
+	<h1>메뉴리스트</h1>
+
+	<ul>
+		<li>아이템1</li>
+		<li>아이템2</li>
+		<li>아이템3</li>
+		<li>아이템4</li>
+		<li>아이템5</li>
+	</ul>
+	
+</body>
+</html>

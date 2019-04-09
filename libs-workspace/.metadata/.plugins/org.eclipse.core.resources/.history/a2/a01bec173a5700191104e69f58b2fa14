@@ -1,0 +1,35 @@
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.mapred.TextInputFormat;
+import org.apache.hadoop.mapred.TextOutputFormat;
+import org.apache.hadoop.mapreduce.Job;
+import com.bit.MapperTask;
+import com.bit.ReducerTask;
+
+public class WordCount {
+	public static void main(String[] args) {
+		// 환경 설정 클래스
+		Configuration config = new Configuration();
+		
+		// Mapreduce Job : 수행할 작업 단위
+		// ResourceManager (Job Tracker)
+		// : Task Tracker의 관리 (모니터링, 스케쥴링)
+		// NodeManager (Task Tracker)
+		// : Task 수행 (Job Tracker에게 보고)
+
+		// HDFS 작업 할당을 위한 Job 클래스
+		Job job = Job.getInstance(config, "WordCount");
+		
+		// 1. 수행할 class 지정 ( 하둡이 수행할 jar)
+		job.setJarByClass(WordCount.class);
+		
+		// 2. Mapper class 설정
+		job.setMapperClass(MapperTask.class);
+		job.setReducerClass(ReducerTask.class);
+		
+		// 3. 입출력 형식 설정
+		job.setInputFormatClass(TextInputFormat.class);
+		job.setOutputFormatClass(TextOutputFormat.class);
+		
+	}
+
+}

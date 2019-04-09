@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
+<script type="text/javascript">
+	$( function() {
+		/* 코드를 완성하세요 */
+		// VJS
+		var objs = document.querySelectorAll("h1 a");
+
+		// for(var i = 0; i< objs.length; i++){
+		// 	var obj = objs[i];
+		// 	// 속성 변경
+		// 	obj.setAttribute("href", "http://www.kyonggi.ac.kr");
+		// 	obj.setAttribute("title", "경기대");
+		// }
+
+		// jQuery
+		var $anchor = $("h1 a");
+		console.log($anchor);
+		console.log($anchor.attr("href"));
+
+		$anchor.attr({
+			"href": "http://www.kyonggi.ac.kr",
+			"title": "경기대"
+		})
+
+} );  
+</script>
+</head>
+<body>
+
+<h1><a href="http://www.smu.ac.kr" target="_blnk" title="우리학교 홈페이지 가기">홈페이지 가기</a></h1>
+
+</body>
+</html>

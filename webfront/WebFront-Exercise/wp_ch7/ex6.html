@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+ Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<title>sample4</title>
+		<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
+		<script type="text/javascript">
+		//	ex6 : 엘리먼트 색상 바꾸기 예제, 자손 셀렉터
+		$(function(){
+			// VJS
+			// var objs = document.querySelectorAll(".blue strong#s1");
+			// console.log(objs);
+
+			// for(var i = 0; i <objs.length; i++){
+			// 	objs[i].style.color = "blue";
+			// }
+			// jQuery
+			$(".blue Strong#s1").css("color", "blue");
+			$(".red Strong").css("color", "red");
+
+		});
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li class="red"><strong> 텍스트 </strong> 텍스트 텍스트 텍스트 텍스트 </li>
+			<li class="blue"><strong id="s1"> 텍스트 </strong> 텍스트 텍스트 텍스트 텍스트 </li>
+			<li class="red"><strong> 텍스트 </strong> 텍스트 텍스트 텍스트 텍스트 </li>
+			<li class="blue"><strong id="s2"> 텍스트 </strong> 텍스트 텍스트 텍스트 텍스트 </li>
+		</ul>
+
+	</body>
+</html>

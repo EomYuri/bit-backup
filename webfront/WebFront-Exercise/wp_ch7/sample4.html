@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+ Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<title>sample4</title>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script type="text/javascript">
+$(function(){
+	$("table tr").each(function(){
+		$(this).html("<td>"+$("th",this).text()+"는"+$("td",this).text()+"</td>");
+	});
+});
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr><th>text(...)</th><td> 텍스트를 변경한다.</td></tr>
+			<tr><th>html(...)</th><td> HTML을 변경한다.</td></tr>
+			<tr><th>prepend(...)</th><td> 태그 안의 앞부분에 HTML을 삽입한다.</td></tr>
+			<tr><th>append(...)</th><td> 태그 안의 뒷부분에 HTML을 삽입한다.</td></tr>
+			<tr><th>before(...)</th><td> 태그의 앞에 HTML을 삽입한다.</td></tr>
+			<tr><th>after(...)</th><td> 태그의 뒤에 HTML을 삽입한다.</td></tr>
+		</table>
+	</body>
+</html>

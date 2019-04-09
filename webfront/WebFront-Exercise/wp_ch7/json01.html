@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
+<script>
+$(function(){
+	$("button").click(function(){
+	
+		$.ajax( {
+			async: true,
+			url : "/json/servlet",
+			type: "get",
+			dataType: "json",
+			data: "",
+			contentType: 'application/json',
+			success: function(data){
+				alert( data.name );
+				alert( data.message );
+				alert( data.etc );
+			},
+			error: function( jqXHR, status, e ){
+				alert( status + " : " + e );
+			}
+		});
+		
+	});
+});
+</script>
+</head>
+<body>
+	<button>json 데이터 받아오기</button>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+  //  div onmousedown, onmouseup 이벤트를 이용, 내부의 Content를 변경해 봅시다
+  function mDown(obj){
+    obj.style.backgroundColor = "#1ec5e5";
+    console.log("mousedown event");
+    obj.innerText = "클릭을 떼주세요";
+  }
+
+  function mUp(obj){
+    obj.style.backgroundColor = "#D94A38";
+    console.log("mouseup event");
+    obj.innerText = "클릭하세요!";
+    
+  }
+</script>
+
+</head>
+<body>
+<div 
+  onmousedown = "mDown(this)"
+  onmouseup = "mUp(this)"  
+  style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+	클릭하세요!
+</div>
+</body>
+</html>

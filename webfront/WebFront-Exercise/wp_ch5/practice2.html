@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>리스트 정의하기</title>
+<style type="text/css">
+/* ul{
+	list-style-type: circle;
+	list-style-tepe: disc;
+	list-style-tepe: square;
+}
+ol{
+	list_style-type: demical;
+	list_style-type: lower-alpah;
+	list_style-type: upper-alpah;
+	list_style-type: lower-roman;
+	list_style-type: upper-roman;
+
+	list-style-type: circle;
+} */
+	*{margin: 0; padding: 0;}
+	body {
+		font-family: "맑은 고딕", "돋움";
+		font-size: 0.75em;
+		color: #333;
+		line-height: 1.8em;
+	}
+
+	.root ul{
+		margin-left: 20px;
+		list-style-type: none;
+	}
+	.root li{
+		padding-left: 15px;
+	}
+	ul.root li {
+		background: url('images/bullet11.jpg')
+				0 8px 
+				no-repeat;
+		/* background-image: url('images/bullet11.jpg');
+		background-repeat: no-repeat;
+		background-position-x: 0;
+		background-position-y: 8px; */
+		
+	}
+
+
+</style>
+</head>
+<body>
+	<ul class="root" >
+		<li>리스트 스타일</li>
+		<li>리스트 스타일</li>
+			<ul>
+				<li>리스트 스타일</li>
+				<li>리스트 스타일</li>
+					<ul>
+						<li>리스트 스타일</li>
+						<li>리스트 스타일</li>
+						<li>리스트 스타일</li>
+						<li>리스트 스타일</li>
+					</ul>
+				<li>리스트 스타일</li>
+				<li>리스트 스타일</li>
+			</ul>
+		<li>리스트 스타일</li>
+		<li>리스트 스타일</li>
+	</ul>
+</body>
+</html>

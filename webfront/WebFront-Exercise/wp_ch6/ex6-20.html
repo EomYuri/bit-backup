@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- 예제 20 ~ 23번까지 -->
+
+<script type = "text/javascript">
+<script type = "dfs">
+//	DOM 내장 객체들과 이벤트 리스너
+function displayDate(){
+	document.getElementById("demo").innerText = new Date();
+}
+
+function clearDate(){
+	document.getElementById("demo").innerText = "";
+}
+
+// window.onload = function(){
+window.addEventListener("load", function(){
+	// navigator 내장 객체
+	//		: 사용자 브러우저 정보
+	console.log("userAgent:", navigator.userAgent);
+	console.log("appVersion:", navigator.appVersion);
+
+	// BrowserDetect
+	BrowserDetect.init();
+	console.log("브라우저:", BrowserDetect.browser);
+	console.log("버전:", BrowserDetect.version);
+	console.log("운영체제:", BrowserDetect.os);
+	
+	var btn = document.getElementById("myBtn");
+	btn.onclick = displayDate;
+	btn.onmouseover = displayDate;
+	btn.onmouseout = clearDate;
+});
+
+</script>
+
+</head>
+
+<body>
+	<p>버튼을 클릭하면  <em>displayDate()</em> 함수가 실행 됩니다.</p>
+	<button id="myBtn">Try it</button>
+	<p id="demo"></p>
+
+	<div id="btn-reload">reload</div>
+	<div id="btn-prev">이전 페이지</div>
+</body>
+</html>

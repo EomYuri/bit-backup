@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
+<script type="text/javascript">
+	$( function() {
+		/* 코드를 완성하세요 */
+		// p 태그를 선택 -> <h1>변경 후</h1>
+		// VJS
+		var objs = document.getElementsByTagName("p");
+		for(var i = 0; i < objs.length; i++){
+			objs[i].outerHTML = "<h1>변경 후</h1>";
+		}
+		// $("p").replaceWith("<h1>변경 후</h1>");
+	} );  
+</script>
+</head>
+<body>
+
+<p>변경전</p>
+
+</body>
+</html>

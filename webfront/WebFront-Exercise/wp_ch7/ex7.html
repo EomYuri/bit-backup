@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+ Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<title>sample5</title>
+		<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
+		<script type="text/javascript">
+		//	ex7 : 엘리먼트 색상 바꾸기 예제, 전체 셀렉터 (*)
+		$(function(){
+		// 	// VJS
+		// 	var objs = document.querySelectorAll("li *");
+		// 	for(var i = 0; i <objs.length; i++)
+		// 	objes[i].style.color = "red";
+		// }
+		// jQuery
+		$("li *").css("color", "red");
+		});
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li><strong> 텍스트 </strong> 텍스트 텍스트 텍스트 텍스트 </li>
+			<li><em> 텍스트 </em> 텍스트 텍스트 텍스트 텍스트 </li>
+			<li><span> 텍스트 </span> 텍스트 텍스트 텍스트 텍스트 </li>
+			<li> 텍스트텍스트텍스트텍스트 </li>
+		</ul>
+
+	</body>
+</html>

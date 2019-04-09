@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+//	x1, y1, x2, y2, color를 매개변수로 가지는 Rectangle 클래스를
+//	function을 이용하여 작성해 봅시다
+var Rectangle = function(x1, y1, x2, y2, color){
+    this.x1 = x1;
+    this.y1 = y1;
+    this.x2 = x2;
+    this.y2 = y2;
+    this.color = color;
+}
+
+// //	Rectangle 클래스의 prototype을 이용하여
+// //	show 메서드를 만들고, 메서드 내부에서 document.write를 이용, 실제 사각형을 그려 봅시다
+// Rectangle.prototype.show = function(){
+//     var width = this.x2 - this.x1;
+//     var height = this.y2 - this.y1;
+//     document.write("[width:" + width + ", height:" + height + ", color:"+ this.color + "를 그렸습니다.");
+// }
+
+// var r1 = new Rectangle(10, 10, 20, 20, "#FF0000");
+// r1.show();
+</script>
+</head>
+<body>
+
+</body>
+<script type = "text/javascript">
+Rectangle.prototype.show = function(){
+    var width = this.x2 - this. x1;
+    var height = this.y2 - this.y1;
+
+    // div 객체를 만들어서 body에 추가해 봅시다.
+    var obj = document.createElement("div");
+    obj.style.position = "absolute";
+    obj.style.left = this.x1 + "px";
+    obj.style.top = this.y1 + "px";
+    obj.style.width = width + "px";
+    obj.style.height = height + "px";
+    obj.style.backgroundColor = this.color;
+    obj.style.border = "1px solid #000";
+
+    document.body.appendChild(obj);
+}
+
+var r1 = new Rectangle(100, 100, 300, 300, "#f00");
+var r2 = new Rectangle(150, 150, 300, 300, "#0f0");
+
+r1.show();
+r2.show();
+
+</script>
+</html>

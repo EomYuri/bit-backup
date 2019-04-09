@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>리스트 정의하기 </title>
+<style type="text/css">
+
+body {
+	font-family: "맑은 고딕";
+	font-size: 0.75em;
+	color: #333;
+	line-height:1.8em; 
+	/* 리스트 li의 간격을 조정합니다. */	
+}
+
+ul.multi {
+	margin: 0;  /* 마진과 패딩을 초기화 해줍니다. */
+	padding:0;
+}
+
+ul.multi li {
+	margin:0;
+	padding:0 0 0 15px; 
+	/* 패딩 값을 왼쪽으로 15픽셀을 설정해서 텍스트를 안쪽으로 넣어 줍니다.
+	패딩값을 지정하지 않으면, 백그라운드 이미지와 겹쳐버립니다. */
+	list-style:none;	
+	/* 리스트 타입을 none 으로 지정합니다. */
+	background-image: url(images/bullet11.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	/* 백그라운드 이미지를 설정합니다. */
+}
+
+
+ul.multi ul li {  /* 두번째 ul 부분을 지정해 주는 것입니다. */
+	list-style: decimal; 
+	/* 리스트 스타일을 숫자로 지정합니다. */
+	margin:0 0 0 5px;
+	/* 마진값을 오른쪽으로 5픽셀 이동하여 들여쓰기 합니다. */
+	padding:0 ; 
+	/* 패딩값은 0로 처리합니다. */
+	background-image:none;
+	/* 여기서 백그라운드 이미지를 none으로 합니다.
+	    none 으로 하지 않으면 상속이 되어 여기도 
+		리스트 이미지가 나타나 버립니다. */
+
+}
+ul.multi ul ul li { /*세번째 ul을 지정합니다. */
+	margin:0 0 0 -20px; 
+	/* 마진의 오른쪽을 -20픽셀로 지정하여 앞으로 당겨줍니다. */
+	padding:0 0 0 15px;
+	/* 패딩 값을 왼쪽으로 15픽셀을 설정해서 텍스트를 안쪽으로 넣어 줍니다. */
+	list-style: none;
+	/* 리스트 타입을 none으로 지정하여 list-type이 상속되는 것을 막아줍니다. */
+	background-image: url(images/bullet11.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	/* 백그라운드 이미지를 설정합니다. */
+}
+ 
+</style>
+</head>
+
+<body>
+
+<ul class="multi">
+    <li>리스트 스타일</li>
+    <li>리스트 스타일</li>
+        <ul>
+            <li>리스트 스타일</li>
+            <li>리스트 스타일</li>
+                    <ul>
+                        <li>리스트 스타일</li>
+                        <li>리스트 스타일</li>
+                        <li>리스트 스타일</li>
+                        <li>리스트 스타일</li>
+                    </ul> 
+            <li>리스트 스타일</li>
+            <li>리스트 스타일</li>
+    	</ul>    
+    <li>리스트 스타일</li>
+    <li리스트 스타일></li>
+</ul>
+
+</body>
+</html>

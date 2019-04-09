@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
+<script>
+//  jQuery 실행 타이밍 확인
+
+//엘리멘트를 골라야 하는 시점 1 (Vanilla JS)
+// windows.addEventListener("load", function(){
+//     // alert("Vanilla JS");
+//     console.log(
+//         document.getElementsByTagName("p")[0].innerText
+//     );
+// });
+//엘리멘트를 롤라야 하는 시점 2 (jQuery)
+// jQuery(document).ready(
+//     console.log(
+//         document.getElementsByTagName("p").innerText
+//         )
+//     )
+
+// )
+// //엘리멘트를 골라야 하는 시점 3 (jQuery)
+// $(document).ready(function(){
+//     console.log("jQuery readey");
+// });
+//엘리멘트를 골라야 하는 시점 4 (jQuery)
+$(function(){
+    console.log("jQuery ready");
+});
+</script>
+</head>
+<body>
+<p>
+    이 문장이 보이고 Hello World가 뜨면, 자바스크립트에서 HTML 엘리멘트에 접근할 수
+    있는 것입니다. 
+</p>
+</body>
+</html>

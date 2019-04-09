@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
+<script type="text/javascript">
+	$( function() {
+		/* 코드를 완성하세요 */
+		// p#p1 태그 앞쪽에 <h1>제목입니다</h1>
+		// VJS
+		var obj = document.getElementById("p1");
+		var prefix = document.createElement("h1");
+		prefix.innerText = "제목입니다.";
+		obj.parentNode.insertBefore(prefix, obj);
+
+		// jQuery
+		$('#p1').before("<h1>타이틀입니다.</h1>")
+
+	} );  
+</script>
+</head>
+<body>
+<p id="p1">내용입니다.</p>
+</body>
+</html>

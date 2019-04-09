@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
+<script type="text/javascript">
+	$( function() {
+		/* 코드를 완성하세요 */
+		//	h1 태그를 p태그 앞쪽으로 이동
+
+		// VJS
+		var objs = document.getElementsByTagName("h1");
+		var obj = objs[0];
+		var target = document.getElementsByTagName("p")[0];
+
+		// target.parentNode.insertBefore(obj, target);
+
+		// jQuery
+		$("h1").insertBefore("p");
+	} );  
+</script>
+</head>
+<body>
+	<p>내용입니다.</p>
+	<h1>타이틀입니다.</h1>
+</body>
+</html>

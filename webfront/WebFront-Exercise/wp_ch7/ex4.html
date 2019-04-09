@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+ Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Style-Type" content="text/css" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<title>sample2</title>
+		<script type="text/javascript" src="./jquery/jquery-1.9.0.js"></script>
+		<script type="text/javascript">
+		//	ex4 : 엘리먼트 색상 바꾸기 예제 - ID 셀렉터
+		$(function(){
+			// VJS
+			// id = first인 DOM객체의 색상
+			// document.firstElemenById("first").style.color = "red";
+
+			// jQuery
+			$("#first").css("color", "red");
+
+			// css 메서드의 활용
+			$("#second").css("color", "green");
+			$("#second").css("font-weight", "bold");
+
+			// jQuery method chaning
+			$("#third").css("color", "blue").css("font-weight", "bold");
+
+			// JSON을 이용한 여러 스타일의 지정
+			$("#fourth").css({
+				"color": "#0FF",
+				"font-weight": "bold"
+			})
+		})
+		</script>
+	</head>
+	<body>
+	
+		<ul>
+			<li id="first"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+			<li id="second"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+			<li id="third"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+			<li id="fourth"> 텍스트 텍스트 텍스트 텍스트 텍스트 </li>
+		</ul>
+
+	</body>
+</html>
