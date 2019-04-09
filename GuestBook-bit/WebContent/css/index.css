@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* 공통 css 로드 */
+@import "main.css";
+
+.list_item{
+	border: 1px solid;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.list_item tr, .list_item th, .list_item td{
+	border: 1px solid;
+	padding: 5px 5px;
+}
+
+.list_item th{
+	background-color: #CCC; 
+}
+
+.toolbar input[type=submit]{
+	width: 100px;
+	float: right;
+}

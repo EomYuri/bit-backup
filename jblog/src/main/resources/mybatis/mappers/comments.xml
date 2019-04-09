@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="comments">
+
+	<insert id="insert" parameterType="commentsVo">
+	<![CDATA[
+	INSERT INTO comments
+	VALUES(seq_comments_no.nextval,
+		#{postNo},
+		#{cmtContent},
+		sysdate,
+		#{userNo}
+		)
+	]]>
+	</insert>
+	
+	<select id="select" parameterType="Long" resultType="commentsVo">
+	<![CDATA[
+	select userName, cmtContent, regDate, cmtNo, u.userNo as userNo
+	from comments c inner join users u on c.userNo = u.userNo 
+	where postNo=#{postNo}
+	]]>
+	</select>
+	
+	<delete id="delete" parameterType="commentsVo" >
+		DELETE FROM comments
+		WHERE cmtNo=#{cmtNo}
+	</delete>
+	
+</mapper>

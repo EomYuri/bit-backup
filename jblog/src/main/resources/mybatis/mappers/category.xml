@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="category">
+
+	<insert id="insert" parameterType="categoryVo">
+	<![CDATA[
+	INSERT INTO category
+	VALUES( seq_category_no.nextval,
+		#{userNo},
+		#{cateName},
+		#{description},
+		sysdate)
+	]]>
+	</insert>
+	
+	<select id="select" parameterType="Long" resultType="categoryVo">
+	<![CDATA[
+	SELECT *
+	FROM category
+	WHERE userNo=#{userNo}
+	ORDER BY cateNo
+	]]>
+	</select>
+	
+	<delete id="delete" parameterType="categoryVo" >
+	DELETE FROM category
+	WHERE cateNo=#{cateNo}
+	</delete>
+	
+</mapper>

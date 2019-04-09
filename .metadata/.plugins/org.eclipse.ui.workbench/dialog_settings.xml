@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="WorkbenchPreferenceDialogSettings">
+		<item value="180" key="DIALOG_X_ORIGIN"/>
+		<item value="110" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="EditorSelectionDialog">
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="-1" key="dialogHeight"/>
+		<item value="-1" key="dialogWidth"/>
+		<list key="textEntries">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jst.jsp.ui.internal.wizard.NewJSPWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.export.ZipFile" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
+		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+			<item value="org.eclipse.jst.j2ee.internal"/>
+		</list>
+		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="ZipFileImportWizard">
+		<item value="false" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\bit\Downloads\PhoneBookOracle.zip"/>
+			<item value="C:\Users\bit\Desktop\엄유리\StudyGroup_Practice1.zip"/>
+		</list>
+	</section>
+	<section name="ZipFileExportWizard">
+		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
+		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
+		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\bit\Desktop\guestbook_eyr.zip"/>
+			<item value="C:\Users\bit\Desktop\ajax.zip"/>
+			<item value="C:\Users\bit\Desktop\socket.zip"/>
+			<item value="C:\Users\bit\Desktop\phonebook.zip"/>
+			<item value="C:\ad\엄유리\자바\그룹스터디\day9\SocketEx.zip"/>
+			<item value="C:\ad\엄유리\자바\그룹스터디\day8\socket.zip"/>
+			<item value="C:\ad\엄유리\자바\그룹스터디\day6\shootinggame.zip"/>
+			<item value="C:\ad\엄유리\자바\PhoneBookOracle.zip"/>
+			<item value="C:\Users\bit\Desktop\엄유리\자바\java_all1.zip"/>
+			<item value="C:\Users\bit\Desktop\엄유리\groupstudy_day2.zip"/>
+			<item value="C:\Users\bit\Desktop\엄유리\groupstudy_day1.zip"/>
+			<item value="C:\Users\bit\Desktop\엄유리\miniproject.zip"/>
+		</list>
+	</section>
+</section>

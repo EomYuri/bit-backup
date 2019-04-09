@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration 
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+<!-- 객체 별칭 지정 -->
+	<typeAliases>
+		<typeAlias alias="userVo" type="com.bitacademy.jblog.vo.UserVo" />
+		<typeAlias alias="blogVo" type="com.bitacademy.jblog.vo.BlogVo" />
+		<typeAlias alias="categoryVo" type="com.bitacademy.jblog.vo.CategoryVo" />
+		<typeAlias alias="postVo" type="com.bitacademy.jblog.vo.PostVo" />
+		
+	</typeAliases>
+	<mappers>
+		<mapper resource="mybatis/mappers/users.xml" />
+		<mapper resource="mybatis/mappers/blog.xml" />
+		<mapper resource="mybatis/mappers/category.xml" />
+		<mapper resource="mybatis/mappers/post.xml" />
+	</mappers>
+
+</configuration>

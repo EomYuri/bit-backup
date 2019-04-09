@@ -1,0 +1,18 @@
+package com.javaex.practice.extra01.q03;
+
+import java.util.Scanner;
+
+public class Question03 {
+	public void printAnswer() {
+		int num;
+		Scanner scanner;
+		
+		System.out.println("정수를 입력하세요:");
+			
+		scanner = new Scanner(System.in);
+		num = scanner.nextInt();
+		scanner.close();
+		
+		//	TODO: 이곳에 코드를 작성합니다.
+	}
+}

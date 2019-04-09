@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;myportal&apos; to &apos;myportal-backup&apos;" description="Rename resource &apos;myportal&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/myportal" name="myportal-backup" stamp="1552264705876" updateReferences="true"/>&#x0A;<refactoring comment="Delete resource &apos;myportal.zip_expanded&apos;" deleteContents="true" description="Delete resource &apos;myportal.zip_expanded&apos;" element1="/myportal.zip_expanded" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1552264754518"/>
+</session>

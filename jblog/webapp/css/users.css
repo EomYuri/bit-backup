@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+#user		{ margin:20px auto;	width:540px; }
+#join-form	{
+	width:250px;
+	padding:10px;
+	border:1px solid #666;
+	border-radius: 10px;
+	margin:50px auto;
+}
+
+label.block-label					{ display:block }
+label.block-label, fieldset			{ margin:5px 0 3px 0 }
+label.block-label, fieldset legend	{ margin-bottom:0px }
+
+fieldset				{ border:none }
+input[type="submit"]	{ display:block; width:200px; margin:10px auto }
+
+#login-form	{
+	width:250px;
+	padding:10px;
+	border:1px solid #666;
+	border-radius: 10px;
+	margin:50px auto;
+	
+}
+
+#user p		{ text-align:center; padding:10px}
+
+#user p.jr-success	{ height:200px }
+
+/* header */
+div#header	h1				{ height:70px; line-height:70px; margin:0 auto; padding-left:10px; color:#79B30B }
+div#header	ul				{ height:20px; margin:0 20px 10px 0 } 
+div#header	li				{ display: inline-block; text-align:center}
+div#header	li a 			{ color:#000000; margin-left:10px; text-decoration:none}
+
+
+/* footer */
+div#footer		{ background:#515151; color: #FFF }
+div#footer p	{ margin:0 auto;padding:5px 10px }

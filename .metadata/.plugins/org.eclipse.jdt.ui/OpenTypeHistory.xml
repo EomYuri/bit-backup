@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=javaEx/src&lt;bookshop{AuthorDAO.java[AuthorDAO" modifiers="513" timestamp="1550033126597"/>
+<typeInfo handle="=javaEx/src&lt;hrapp{HRDAO.java[HRDAO" modifiers="513" timestamp="1550042571327"/>
+<typeInfo handle="=EmailList/src&lt;com.bitacademy.emaillist.controller{BaseServlet.java[BaseServlet" modifiers="1025" timestamp="1551317239255"/>
+<typeInfo handle="=MyHome/src&lt;com.bitacademy.myhome.controller{BaseServlet.java[BaseServlet" modifiers="1025" timestamp="1551334203156"/>
+<typeInfo handle="=EmailList/D:\/JavaStudy\/apache-tomcat-8.5.38\/lib\/servlet-api.jar&lt;javax.servlet(Filter.class[Filter" modifiers="1537" timestamp="1551059060190"/>
+<typeInfo handle="=HelloWorld/D:\/JavaStudy\/apache-tomcat-8.5.38\/lib\/servlet-api.jar&lt;javax.servlet.http(HttpServlet.class[HttpServlet" modifiers="1057" timestamp="1551059060190"/>
+<typeInfo handle="=PhoneBook/src&lt;com.bitacademy.phonebook.controller{BaseServlet.java[BaseServlet" modifiers="1025" timestamp="1551745108748"/>
+<typeInfo handle="=jblog/src\/main\/java&lt;com.bitacademy.jblog.repository{UserDao.java[UserDao" modifiers="513" timestamp="1552532077672"/>
+<typeInfo handle="=jblog/src\/main\/java&lt;com.bitacademy.jblog.repository{BlogDao.java[BlogDao" modifiers="513" timestamp="1552893637070"/>
+<typeInfo handle="=jblog/src\/main\/java&lt;com.bitacademy.jblog.service{BlogService.java[BlogService" modifiers="513" timestamp="1552893620914"/>
+<typeInfo handle="=jblog/src\/main\/java&lt;com.bitacademy.jblog.repository{CommentsDao.java[CommentsDao" modifiers="513" timestamp="1553587416483"/>
+<typeInfo handle="=jblog/src\/main\/java&lt;com.bitacademy.jblog.service{CommentsService.java[CommentsService" modifiers="513" timestamp="1553587567999"/>
+<typeInfo handle="=jblog/src\/main\/java&lt;com.bitacademy.jblog.repository{CategoryDao.java[CategoryDao" modifiers="513" timestamp="1552977614743"/>
+<typeInfo handle="=jblog/src\/main\/java&lt;com.bitacademy.jblog.service{CategoryService.java[CategoryService" modifiers="513" timestamp="1552977730812"/>
+</typeInfoHistroy>

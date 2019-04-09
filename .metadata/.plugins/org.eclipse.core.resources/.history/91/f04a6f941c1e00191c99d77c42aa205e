@@ -1,0 +1,22 @@
+package com.javaex.practice.extra01.q03;
+
+import java.util.Scanner;
+
+public class Question03 {
+	public void printAnswer() {
+		int num;
+		Scanner scanner;
+		
+		System.out.println("정수를 입력하세요:");
+			
+		scanner = new Scanner(System.in);
+		num = scanner.nextInt();
+		scanner.close();
+		
+		if(num%1==0&&num%num==0) {
+			System.out.printf("%d은 소수입니다.%n",num);
+		}else {
+			System.out.println("소수가 아닙니다.");
+		}
+	}
+}

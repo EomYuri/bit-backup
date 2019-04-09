@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.bitacademy.myportal.controller&apos; to &apos;com.bitacademy.myportal&apos;&#x0D;&#x0A;- Original project: &apos;myportal&apos;&#x0D;&#x0A;- Original element: &apos;myportal/src/main/java/com.bitacademy.myportal.controller&apos;&#x0D;&#x0A;- Renamed element: &apos;myportal/src/main/java/com.bitacademy.myportal&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings&#x0D;&#x0A;- Rename subpackages of the package" description="Rename package &apos;com.bitacademy.myportal.controller&apos;" flags="589830" hierarchical="true" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.bitacademy.myportal.controller" name="com.bitacademy.myportal" qualified="false" references="true" stamp="1551940131209" textual="false" version="1.0"/>
+</session>

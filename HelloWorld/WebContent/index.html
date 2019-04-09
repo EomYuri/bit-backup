@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello Web World</title>
+</head>
+<body>
+	<h1>Hello Web World</h1>
+	<p>이것은 정적 HTML로 만들어진 페이지입니다.</p>
+	
+	<!-- GET 방식 -->
+	<h3>GET 전송</h3>
+	<a href = "/HelloWorld/hs?name=Servlet">
+		GET HelloServlet 호출
+	</a>
+	
+	<!-- POST 방식: HTML FORM 이용 -->
+	<h3>POST 전송</h3>
+	<form method = "POST"
+		action = "/HelloWorld/hs">
+		<label for="last_name">성(Family Name)</label>
+      <input type="text"   name="last_name"><br>
+      <label for="first_name">이름(First Name)</label>
+      <input type="text"   name="first_name"><br>
+      <input type="submit" value="전송">
+      <input type="reset" va;ue="초기화">
+
+			
+		</form>
+
+</body>
+</html>

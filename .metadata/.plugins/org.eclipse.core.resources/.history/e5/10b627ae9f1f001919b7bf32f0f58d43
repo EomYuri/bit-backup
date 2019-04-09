@@ -1,0 +1,12 @@
+package phoneproject;
+
+public class PhoneMenu {
+
+	public static final int List = 1;	  	//리스트
+	public static final int Register = 2;	//등록
+	public static final int Delete = 3;		//삭제
+	public static final int Search = 4;		//검색
+	public static final int End = 5;		//종료
+	
+}
+	

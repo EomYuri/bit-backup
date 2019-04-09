@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>HelloWorld</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<!-- 컨텍스트 파라미터 -->
+	<context-param>
+		<param-name>appName</param-name>
+		<param-value>HelloWorld</param-value>
+	</context-param>
+	<context-param>
+		<param-name>dbUser</param-name>
+		<param-value>bituser</param-value>
+	</context-param>
+	<context-param>
+		<param-name>dbPass</param-name>
+		<param-value>bituser</param-value>
+	</context-param>
+	<filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>com.bitacademy.filter.EncodingFilter
+		</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- 서블릿 등록 -->
+	<servlet>
+		<!-- servlet-name : 서블릿 식별자 -->
+		<servlet-name>MyFirstServlet</servlet-name>
+		<!-- servlet-class : 서블릿 클래스 -->
+		<servlet-class>HelloServlet</servlet-class>
+		<!-- 서블릿 초기화 파라미터 -->
+		<init-param>
+			<param-name>serveltName</param-name>
+			<param-value>HelloServlet</param-value>
+		</init-param>
+		<init-param>
+			<param-name>description</param-name>
+			<param-value>
+				나의 첫 번째 서블릿입니다</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MyFirstServlet</servlet-name>
+		<url-pattern>/hs</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Error Page 설정 -->
+	<!-- 특정 Exception에 대한 에러페이지 -->
+	<error-page>
+		<exception-type>
+			java.lang.Throwable
+		</exception-type>
+		<location>/error_pages/error.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>
+			/erre_pages.error_404.jsp
+		</location>
+	</error-page>
+</web-app>

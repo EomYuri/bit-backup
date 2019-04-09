@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+@import "mysite.css";
+#insert-form	{
+	width:250px;
+	padding:10px;
+	border:1px solid #666;
+	border-radius: 10px;
+	margin: 20px 30px;
+}
+
+label.block-label					{ display:block }
+label.block-label, fieldset			{ margin:3px 0 3px 0 }
+
+h1{
+	font-size: 1.5em;
+}
+
+fieldset				{ border:none }
+input[type="submit"]	{ display:block; width:80px; margin:10px auto }

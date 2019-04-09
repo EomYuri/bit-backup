@@ -1,0 +1,16 @@
+package phoneproject;
+
+public class PhoneDAO {
+	
+	// 연락처 등록
+	public abstract int register(PhoneVO vo);
+	
+	// 연락처 삭제
+	public abstract int delete(int index);
+	
+	// 연락처 검색
+	public abstract PhoneVO select(int index);
+	
+	// 연락처 종료
+
+}

@@ -1,0 +1,29 @@
+package com.javaex.practice.extra01.q03;
+
+import java.util.Scanner;
+
+public class Question03 {
+	public void printAnswer() {
+		int num;
+		boolean isPrime = false;
+		Scanner scanner;
+
+		System.out.println("정수를 입력하세요:");
+
+		scanner = new Scanner(System.in);
+		num = scanner.nextInt();
+		scanner.close();
+
+		for(int i = 2; i <num; i++) {
+			if(num%i==0) {
+				isPrime = true;
+				break;
+			}
+		}
+		if(isPrime) {
+			System.out.printf("%d은 소수가 아닙니다.",num);
+		}else {
+			System.out.printf("%d은 소수입니다.",num);
+		}
+	}
+}
