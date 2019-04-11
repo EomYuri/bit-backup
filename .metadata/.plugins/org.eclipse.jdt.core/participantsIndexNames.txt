@@ -27,6 +27,8 @@ D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jsp
 \myportal\src\main\java
 D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2077748423.index
 \myportal\src\main\java
+D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\352043750.index
+\guestbook_mvc\src
 D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1895948044.index
 \myportal\src\main\java
 D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3083575431.index
@@ -91,6 +93,8 @@ D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jsp
 \myportal\src\main\java
 D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\401941468.index
 \Myportal\src\main\java
+D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2797672436.index
+\guestbook_spring\src\main\java
 D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2261648974.index
 \myportal-backup\src\main\java
 D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2108950656.index

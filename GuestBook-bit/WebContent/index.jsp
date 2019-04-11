@@ -1,4 +1,4 @@
-﻿<%@page import="vo.GuestVo"%>
+<%@page import="guestbook_sping.vo.GuestVo"%>
 <%@page import="java.util.List"%>
 <%@page import="dao.GuestBookDao"%>
 <%@page import="dao.GuestBookDaoImpl"%>

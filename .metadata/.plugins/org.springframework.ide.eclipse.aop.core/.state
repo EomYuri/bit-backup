@@ -3,6 +3,5 @@
 <aop-project name="hellospring"/>
 <aop-project name="jblog-backup"/>
 <aop-project name="myportal"/>
-<aop-project name="myportal-backup"/>
 <aop-project name="jblog"/>
 </aop-reference-model>

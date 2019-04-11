@@ -1,6 +1,6 @@
 <%@page import="dao.GuestBookDaoImpl"%>
 <%@page import="dao.GuestBookDao"%>
-<%@page import="vo.GuestVo"%>
+<%@page import="guestbook_sping.vo.GuestVo"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
