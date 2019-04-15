@@ -29,7 +29,6 @@ INDEX VERSION 1.131+D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.ecli
 4158674302.index
 3215481920.index
 1080372457.index
-3873542461.index
 2731983686.index
 68154919.index
 3250236435.index

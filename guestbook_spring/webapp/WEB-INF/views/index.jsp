@@ -27,16 +27,16 @@
 </div>
 
 
-	<div style="margin: 10px auto; width: 500px">
-	<c:forEach items="${list }" var="vo">
 	
+	<c:forEach items="${list }" var="vo">
+	<div style="margin: 10px auto; width: 500px">
 	
 	<table style="width: 513px; border: 1px solid #666">
 		<tr>
 			<th>이름</th>
 			<td>${vo.name }</td>
 			<td>
-				<form action="<%=request.getContextPath() %>/deleteform" method="GET">
+				<form action="<%=request.getContextPath() %>/deleteform" method="POST">
 					<input type="hidden" name="password" value="${vo.password }">
 					<input type="hidden" name="no" value="${vo.no }">
 					<input type="submit" value="X">

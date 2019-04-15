@@ -7,7 +7,7 @@
 	FROM guest
 	]]>
 	</select>
-	
+
 	<insert id="insert" parameterType="guestVo">
 	<![CDATA[
 	INSERT INTO guest
@@ -18,10 +18,12 @@
 		)
 	]]>
 	</insert>
-	
-	<delete id="delete" parameterType="guestVo" >
+
+	<delete id="delete" parameterType="guestVo">
+	<![CDATA[
 		DELETE FROM guest
 		WHERE no=#{no}
+		]]>
 	</delete>
-	
+
 </mapper>

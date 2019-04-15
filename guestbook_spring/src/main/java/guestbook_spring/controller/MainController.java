@@ -28,7 +28,7 @@ public class MainController {
 		return "index";
 	}
 	
-	@RequestMapping(value = "deleteform", method = RequestMethod.GET)
+	@RequestMapping(value = "deleteform", method = RequestMethod.POST)
 	public String deleteform(@ModelAttribute guestbookVo vo, Model model) {
 		model.addAttribute("vo", vo);
 		
@@ -37,7 +37,7 @@ public class MainController {
 	
 	@RequestMapping(value="delete", method = RequestMethod.POST)
 	public String delete(@ModelAttribute guestbookVo vo, @RequestParam("pass") String pass) {
-		
+		System.out.println("삭제액션");
 		if(vo.getPassword().equals(pass)) {
 			boolean success = guestbookServiceImpl.delete(vo.getNo());
 			if(success) {
