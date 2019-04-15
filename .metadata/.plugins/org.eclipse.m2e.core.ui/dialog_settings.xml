@@ -20,12 +20,14 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="guestbook_spring"/>
 			<item value="com.example"/>
 			<item value="com.bitacademy"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="guestbook_spring"/>
 			<item value="jblog"/>
 			<item value="myportal"/>
 			<item value="hellospring"/>

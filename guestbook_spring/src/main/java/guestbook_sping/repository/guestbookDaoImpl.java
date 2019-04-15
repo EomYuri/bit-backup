@@ -15,20 +15,19 @@ public class guestbookDaoImpl implements guestbookDao{
 
 	@Override
 	public List<guestbookVo> getList() {
-		// TODO Auto-generated method stub
-		return null;
+		return sqlSession.selectList("guest.selectAll");
 	}
 
 	@Override
 	public int insert(guestbookVo vo) {
-		// TODO Auto-generated method stub
-		return 0;
+		int insertedCount = sqlSession.insert("guest.insert", vo);
+		return insertedCount;
 	}
 
 	@Override
 	public int delete(Long no) {
-		// TODO Auto-generated method stub
-		return 0;
+		int deletedCount = sqlSession.delete("guest.delete", no);
+		return deletedCount;
 	}
 	
 

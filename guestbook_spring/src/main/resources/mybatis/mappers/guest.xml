@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="guest">
-
+	<select id="selecAll" resultType="guestVo">
+	<![CDATA[
+	SELECT *
+	FROM guest
+	]]>
+	</select>
+	
+	<insert id="insert" parameterType="guestVo">
+	<![CDATA[
+	INSERT INTO guest
+	VALUES(seq_guest_pk.nextval,
+		#{name},
+		#{password},
+		#{content}
+		)
+	]]>
+	</insert>
+	
+	<delete id="delete" parameterType="guestVo" >
+		DELETE FROM guest
+		WHERE no=#{no}
+	</delete>
+	
 </mapper>

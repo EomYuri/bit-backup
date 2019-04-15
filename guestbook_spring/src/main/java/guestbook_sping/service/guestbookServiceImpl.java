@@ -14,19 +14,17 @@ public class guestbookServiceImpl implements guestbookService {
 	guestbookDao guestbookDaoImpl;
 	
 	@Override
-	public List<guestbookVo> getMessageList() {
+	public List<guestbookVo> getList() {
 		return guestbookDaoImpl.getList();
 	}
 
 	@Override
-	public boolean writeMessage(guestbookVo vo) {
-		// TODO Auto-generated method stub
+	public boolean write(guestbookVo vo) {
 		return false;
 	}
 
 	@Override
-	public boolean deleteMessage(guestbookVo vo) {
-		// TODO Auto-generated method stub
+	public boolean delete(guestbookVo vo) {
 		return false;
 	}
 

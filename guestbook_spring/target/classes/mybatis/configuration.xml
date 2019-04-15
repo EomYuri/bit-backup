@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias alias="guestVo" type="vo.GuestVo" />
+		<typeAlias alias="guestVo" type="guestbook_spring.vo.guestbookVo" />
 	</typeAliases>
 	<mappers>
 		<mapper resource="mybatis/mappers/guest.xml" />
