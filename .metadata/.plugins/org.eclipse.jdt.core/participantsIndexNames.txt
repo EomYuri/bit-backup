@@ -25,10 +25,10 @@ D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jsp
 \myportal\src\main\java
 D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2316158933.index
 \myportal\src\main\java
-D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2077748423.index
-\myportal\src\main\java
 D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\352043750.index
 \guestbook_mvc\src
+D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2077748423.index
+\myportal\src\main\java
 D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1895948044.index
 \myportal\src\main\java
 D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3083575431.index
@@ -63,6 +63,8 @@ D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jsp
 \EmailList-Backup\src
 D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3127824720.index
 \jblog-backup\src\main\java
+D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2392535427.index
+\JSPStudy_Spring\src\main\java
 D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3937876174.index
 \jspstudy2\src
 D:\JavaStudy\JavaStudy-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\109425551.index

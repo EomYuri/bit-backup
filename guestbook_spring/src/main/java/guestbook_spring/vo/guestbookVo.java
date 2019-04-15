@@ -1,4 +1,4 @@
-package guestbook_sping.vo;
+package guestbook_spring.vo;
 
 public class guestbookVo {
 	private Long no;
@@ -20,6 +20,11 @@ public class guestbookVo {
 		this.password = password;
 		this.content = content;
 	}
+	
+	public guestbookVo() {
+		
+	}
+	
 
 	public Long getNo() {
 		return no;

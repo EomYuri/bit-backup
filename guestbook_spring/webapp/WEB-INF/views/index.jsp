@@ -5,12 +5,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>스프링 테스트</title>
+<title>방명록</title>
 </head>
 <body>
 
 <div style="margin: 10px auto; width: 500px">
-<form action="<%=request.getContextPath() %>/" method="POST">
+<form action="<%=request.getContextPath() %>/write" method="POST">
 	<table style="border: 1px solid #666">
 		<tr>
 			<th>이름</th>
@@ -28,7 +28,7 @@
 
 
 	<div style="margin: 10px auto; width: 500px">
-	<c:foreach items="${list }" var="vo">
+	<c:forEach items="${list }" var="vo">
 	
 	
 	<table style="width: 513px; border: 1px solid #666">
@@ -36,8 +36,7 @@
 			<th>이름</th>
 			<td>${vo.name }</td>
 			<td>
-				<form action="<%=request.getContextPath() %>/" method="POST">
-					<input type="hidden" name="a" value="deleteform">
+				<form action="<%=request.getContextPath() %>/deleteform" method="GET">
 					<input type="hidden" name="password" value="${vo.password }">
 					<input type="hidden" name="no" value="${vo.no }">
 					<input type="submit" value="X">
@@ -49,7 +48,7 @@
 		</tr>
 	</table>
 	</div>
-</c:foreach>
+</c:forEach>
 
 
 </body>

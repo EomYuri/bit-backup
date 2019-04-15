@@ -2,7 +2,7 @@ package guestbook_sping.repository;
 
 import java.util.List;
 
-import guestbook_sping.vo.guestbookVo;
+import guestbook_spring.vo.guestbookVo;
 
 public interface guestbookDao {
 	// DB에서 방명록들을 가져오는 함수

@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import guestbook_sping.repository.guestbookDao;
-import guestbook_sping.vo.guestbookVo;
+import guestbook_spring.vo.guestbookVo;
 
 @Service
 public class guestbookServiceImpl implements guestbookService {
@@ -20,12 +20,12 @@ public class guestbookServiceImpl implements guestbookService {
 
 	@Override
 	public boolean write(guestbookVo vo) {
-		return false;
+		return guestbookDaoImpl.insert(vo)==1;
 	}
 
 	@Override
-	public boolean delete(guestbookVo vo) {
-		return false;
+	public boolean delete(Long no) {
+		return guestbookDaoImpl.delete(no)==1;
 	}
 
 }

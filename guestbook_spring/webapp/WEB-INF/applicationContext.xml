@@ -22,8 +22,8 @@
 	<!--Oracle DataSource를 bean으로 등록-->
     <bean id="oracleDatasource" class="oracle.jdbc.pool.OracleDataSource" destroy-method="close">
         <property name="URL" value="jdbc:oracle:thin:@Localhost:1521:xe"/>
-        <property name="user" value="jblog"/>
-        <property name="password" value="jblog"/>
+        <property name="user" value="bituser"/>
+        <property name="password" value="bituser"/>
         <property name="connectionCachingEnabled" value="true"/>
         <qualifier value="main-db"/>
     </bean>

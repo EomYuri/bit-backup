@@ -7,11 +7,9 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
-
 	<properties>
 		<org.springframework-version>4.2.3.RELEASE</org.springframework-version>
 	</properties>
-
 
 	<repositories>
 		<repository>
@@ -20,7 +18,6 @@
 			<url>https://maven.atlassian.com/3rdparty/</url>
 		</repository>
 	</repositories>
-
 
 	<dependencies>
 		<dependency>
@@ -39,7 +36,6 @@
 			<version>4.2.3.RELEASE</version>
 		</dependency>
 
-
 		<!-- database -->
 		<!--Spring JDBC -->
 		<dependency>
@@ -48,14 +44,12 @@
 			<version>4.3.14.RELEASE</version>
 		</dependency>
 
-
 		<!--Oracle Driver -->
 		<dependency>
 			<groupId>com.oracle</groupId>
 			<artifactId>ojdbc6</artifactId>
 			<version>12.1.0.1-atlassian-hosted</version>
 		</dependency>
-
 
 		<!--MyBatis -->
 		<dependency>
@@ -64,21 +58,31 @@
 			<version>3.2.2</version>
 		</dependency>
 
-
 		<!--MyBatis Spring -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
 			<version>1.2.3</version>
 		</dependency>
-		
-		<!-- JSTL -->
+
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.0.GA</version>
+		</dependency>
+
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+			<scope>compile</scope>
 		</dependency>
 		
+		<dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+</dependency>
 	</dependencies>
 
 	<build>
@@ -100,8 +104,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 
 
 </project>
